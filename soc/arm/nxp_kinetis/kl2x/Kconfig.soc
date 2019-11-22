@@ -58,6 +58,9 @@ config SOC_PART_NUMBER_MKL25Z64VLK4
 config SOC_PART_NUMBER_MKL25Z128VLK4
 	bool
 
+config SOC_PART_NUMBER_MKL27Z64VLH4
+	bool
+
 config SOC_PART_NUMBER_KINETIS_KL2X
 	string
 	default "MKL25Z32VFM4" if SOC_PART_NUMBER_MKL25Z32VFM4
@@ -72,6 +75,7 @@ config SOC_PART_NUMBER_KINETIS_KL2X
 	default "MKL25Z32VLK4" if SOC_PART_NUMBER_MKL25Z32VLK4
 	default "MKL25Z64VLK4" if SOC_PART_NUMBER_MKL25Z64VLK4
 	default "MKL25Z128VLK4" if SOC_PART_NUMBER_MKL25Z128VLK4
+	default "MKL27Z64VLH4" if SOC_PART_NUMBER_MKL27Z64VLH4
 	help
 	  This string holds the full part number of the SoC. It is a hidden option
 	  that you should not set directly. The part number selection choice defines

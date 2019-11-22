@@ -293,7 +293,11 @@ static const struct mcux_lpsci_config mcux_lpsci_0_config = {
 	.clock_name = DT_UART_MCUX_LPSCI_0_CLOCK_NAME,
 	.clock_subsys =
 		(clock_control_subsys_t)DT_UART_MCUX_LPSCI_0_CLOCK_SUBSYS,
+	#ifdef CONFIG_BOARD_FRDM_KL27Z
+	.baud_rate = DT_NXP_KINETIS_LPSCI_4006C000_CURRENT_SPEED,
+	#else
 	.baud_rate = DT_NXP_KINETIS_LPSCI_4006A000_CURRENT_SPEED,
+	#endif
 #ifdef CONFIG_UART_INTERRUPT_DRIVEN
 	.irq_config_func = mcux_lpsci_config_func_0,
 #endif
