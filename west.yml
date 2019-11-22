@@ -20,7 +20,7 @@ manifest:
 
   remotes:
     - name: upstream
-      url-base: https://github.com/vladoatanasov/zephyr
+      url-base: https://github.com/ramjam-io/zephyr.git
 
   #
   # Please add items below based on alphabetical order
